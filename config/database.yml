@@ -1,0 +1,23 @@
+default: &default
+  host: localhost
+  adapter: postgresql
+  encoding: utf8
+  pool: 5
+  secret_key_base: <%= ENV['SECRET_KEY_BASE'] %>
+  username:        <%= ENV['DATABASE_USERNAME'] %>
+  password:        <%= ENV['DATABASE_PASSWORD'] %>
+
+development:
+  <<: *default
+  database: one_development
+
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
+test:
+  <<: *default
+  database: one_test
+
+production:
+  <<: *default
+  database: one_production
