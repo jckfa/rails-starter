@@ -1,0 +1,19 @@
+%head
+  %title One
+  = csrf_meta_tags
+  = stylesheet_link_tag    'application', media: 'all',
+                                          'data-turbolinks-track': 'reload'
+  = javascript_include_tag 'application', 'data-turbolinks-track': 'reload',
+                                          async: Rails.env.production?
+  = render 'includes/shim'
+
+  - if Rails.env.development?
+    :css
+      .debug_dump {
+        background-color: #eee;
+        padding: 1em;
+        margin: 0;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+      }

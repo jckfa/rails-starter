@@ -1,21 +1,24 @@
 
-# Ignore bundler config.
+# bundler config
 /.bundle
 
-# Ignore all logfiles and tempfiles.
+# logfiles, tempfiles
 /log/*
 /tmp/*
 !/log/.keep
 !/tmp/.keep
 
-# Ignore Byebug command history file.
+# Byebug command history
 .byebug_history
 
-# Ignore Spring files.
+# Spring files
 /spring/*.pid
 
 # local puma config
 config/puma.rb
 
-# Ignore uploaded test images.
-/public/uploads
+# uploaded test images
+public/uploads
+
+# node modules
+node_modules
