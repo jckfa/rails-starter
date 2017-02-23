@@ -1,10 +1,10 @@
 %head
   %title Starter App
   = csrf_meta_tags
-  = stylesheet_link_tag    'application', media: 'all',
-                                          'data-turbolinks-track': 'reload'
-  = javascript_include_tag 'application', 'data-turbolinks-track': 'reload',
-                                          async: Rails.env.production?
+  = stylesheet_link_tag    'app', media: 'all',
+                                  'data-turbolinks-track': 'reload'
+  = javascript_include_tag 'app', 'data-turbolinks-track': 'reload',
+                                  async: Rails.env.production?
   = render 'includes/shim'
 
   - if Rails.env.development?
