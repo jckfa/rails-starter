@@ -26,4 +26,4 @@ public/assets
 # misc
 Gemfile.lock
 node_modules
-assets/build
+app/assets/build
