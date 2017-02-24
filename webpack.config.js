@@ -5,7 +5,7 @@ const extractCSS = require('extract-text-webpack-plugin');
 module.exports = {
   context: path.resolve(__dirname, 'app/assets'),
   entry: {
-    'app': './common.js',
+    app: './common.js'
   },
   output: {
     path: path.resolve(__dirname, "app/assets/build"),
@@ -27,5 +27,9 @@ module.exports = {
   },
   plugins: [
     new extractCSS('bundle.css'),
-  ]
+  ],
+  devServer: {
+    contentBase: path.join(__dirname, "/app/assets/"),
+    port: 9999
+  }
 }

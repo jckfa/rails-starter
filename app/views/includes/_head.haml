@@ -1,13 +1,17 @@
+-# serve assets via webpack-dev-server (port declared in webpack.config.js)
+- bundle = development? ? 'http://localhost:9999/bundle.css' : 'bundle'
+- app    = development? ? 'http://localhost:9999/app.js'     : 'app'
+
 %head
   %title Starter App
   = csrf_meta_tags
-  = stylesheet_link_tag    'bundle', media: 'all',
-                                     'data-turbolinks-track': 'reload'
-  = javascript_include_tag 'app',    'data-turbolinks-track': 'reload',
-                                     async: Rails.env.production?
+  = stylesheet_link_tag    bundle, media: 'all',
+                                   'data-turbolinks-track': 'reload'
+  = javascript_include_tag app,    'data-turbolinks-track': 'reload',
+                                   async: production?
   = render 'includes/shim'
 
-  - if Rails.env.development?
+  - if development?
     :css
       .debug_dump {
         background-color: #eee;

@@ -1,2 +1,2 @@
 rails: bundle exec rails server
-webpack: webpack --watch
+webpack: node_modules/.bin/webpack-dev-server --progress
