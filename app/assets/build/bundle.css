@@ -1,0 +1,11 @@
+.red {
+  color: red;
+}
+::-moz-selection {
+  color: red;
+  background-color: yellow;
+}
+::selection {
+  color: red;
+  background-color: yellow;
+}

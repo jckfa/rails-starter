@@ -15,10 +15,15 @@
 /spring/*.pid
 
 # local puma config
-config/puma.rb
+# config/puma.rb
 
 # uploaded test images
 public/uploads
 
-# node modules
+# compiled assets
+public/assets
+
+# misc
+Gemfile.lock
 node_modules
+assets/build
