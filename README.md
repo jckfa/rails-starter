@@ -3,12 +3,13 @@
 
 ### Summary
 - uses both webpack and sprockets
-- css is extracted from js to separate file
 - webpack-dev-server (automatic page reloading)
+- css is extracted from js to separate file
 - postcss-cssnext
 - haml
 - postgresql
 - puma
+- no jquery dependency
 
 ### Setup
 ```
