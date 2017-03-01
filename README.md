@@ -33,6 +33,7 @@ $ open http://localhost:5000
 - capistrano?
 - set up production task(s)
 - auto-page-reloading on view changes—is that possible?
+- seo meta tags (open graph, twitter)
 
 ### Notes
 - whereas `webpack --watch` compiles to disk (updates the app/assets/build folder on changes), webpack-dev-server does not
