@@ -10,6 +10,7 @@
 - postgresql
 - puma
 - no jquery dependency
+- global settings (see config/settings.yml)
 
 ### Setup
 ```

@@ -10,6 +10,7 @@ gem 'jbuilder',     '~> 2.5'
 gem 'bcrypt',       '~> 3.1.7'
 gem 'haml',         '~> 4.0.7'
 gem 'foreman',      '~> 0.83.0'
+gem 'config',       '~> 1.4'
 
 group :development, :test do
   gem 'byebug', platform: :mri
