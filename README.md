@@ -3,7 +3,7 @@
 
 ### Summary
 - uses both webpack and sprockets
-- webpack-dev-server (automatic page reloading)
+- webpack-dev-server (automatic page reloading—only for assets though)
 - css is extracted from js to separate file
 - postcss-cssnext
 - haml
@@ -31,6 +31,7 @@ $ open http://localhost:5000
 - set up React (probably in a separate boilerplate)
 - capistrano?
 - set up production task(s)
+- auto-page-reloading on view changes—is that possible?
 
 ### Notes
 - whereas `webpack --watch` compiles to disk (updates the app/assets/build folder on changes), webpack-dev-server does not
