@@ -3,7 +3,7 @@
 - app    = development? ? 'http://localhost:9999/app.js'     : 'app'
 
 %head
-  %title= title(yield(:title))
+  %title= title yield(:title)
   = render 'includes/meta'
   = csrf_meta_tags
   = stylesheet_link_tag    bundle, media: 'all',

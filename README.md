@@ -34,6 +34,7 @@ $ open http://localhost:5000
 - set up production task(s)
 - auto-page-reloading on view changes—is that possible?
 - seo meta tags (open graph, twitter)
+- normalize styles
 
 ### Notes
 - whereas `webpack --watch` compiles to disk (updates the app/assets/build folder on changes), webpack-dev-server does not

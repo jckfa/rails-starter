@@ -1,9 +1,4 @@
 
 .red {
-  color: var(--text-color);
-}
-
-::selection {
-  color: var(--text-color);
-  background-color: var(--bg-color);
+  color: var(--text);
 }
