@@ -1,0 +1,18 @@
+- if development?
+  :css
+    .debug_dump {
+      font-size: 14px;
+      line-height: 1;
+      background-color: #eee;
+      padding: 1em;
+      margin: 0;
+      position: fixed;
+      bottom: 0;
+      right: 0;
+    }
+
+      @media (max-width: 50em) {
+        .debug_dump {
+          display: none;
+        }
+      }

@@ -1,13 +1,10 @@
-
 !!! 5
 %html(lang="en")
   = render 'includes/head'
 
   %body
     = render 'includes/header'
-
-    %main.site-main
-      = yield
-
+    = render 'includes/main'
     = render 'includes/footer'
+
     = debug params if development?

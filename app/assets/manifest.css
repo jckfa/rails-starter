@@ -1,3 +1,5 @@
 
 @import "css/base/variables.css";
-@import "css/base/test.css";
+
+@import "css/includes/header.css";
+@import "css/includes/footer.css";
